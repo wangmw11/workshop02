@@ -1,14 +1,15 @@
+
+data digitalocean_ssh_key markey23 {
+  name = "markey23"
+}
+
+
 /*
-data digitalocean_ssh_key mykey {
-  name = "mykey123"
+resource digitalocean_ssh_key "markey23"{
+    name = "markey23"
+    public_key= file("./23markey.pub")
 }
 */
-
-resource digitalocean_ssh_key mykey{
-    name = "mykey"
-    public_key= file("./mykey.pub")
-}
-
 
 
 resource local_file inventory_yaml {
@@ -32,8 +33,8 @@ resource digitalocean_droplet code-server {
   image = var.droplet_image
   region = var.droplet_region
   size = var.droplet_size
-  //  ssh_keys = [ data.digitalocean_ssh_key.mykey.id ]
- ssh_keys = [ digitalocean_ssh_key.mykey.id ]
+  ssh_keys = [ data.digitalocean_ssh_key.markey23.fingerprint ]
+   //ssh_keys = [ digitalocean_ssh_key.markey23.id ]
 
 
   connection {

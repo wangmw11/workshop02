@@ -17,3 +17,7 @@ terraform.tfstate
 .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.16.0/linux_amd64/README.md
 .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.16.0/linux_amd64/terraform-provider-docker_v2.16.0
 .terraform.tfstate.lock.info
+23markey
+23markey.pub
+terraform.tfvars
+root*
