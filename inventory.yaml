@@ -1,0 +1,7 @@
+all:
+    hosts:
+        code-server:
+            ansible_host: 159.223.38.144
+            ansible_user: root
+            ansible_ssh_private_key_file: ./23markey
+            code_server_domain: code-server.159.223.38.144.nip.io
