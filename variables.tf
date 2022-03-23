@@ -20,7 +20,7 @@ variable private_key {
 
 variable droplet_size {
     type = string
-    default = "s-1vcpu-1gb"
+    default = "s-1vcpu-2gb"
 }
 
 variable droplet_image {
