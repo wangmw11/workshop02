@@ -3,7 +3,6 @@ mykey
 mykey.pub
 id_rsa
 id_rsa.pub
-inventory.yaml
 .terraform.lock.hcl
 terraform.tfstate.backup
 terraform.tfstate
